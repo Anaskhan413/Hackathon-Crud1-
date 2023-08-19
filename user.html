@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="href=”https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css”rel=”stylesheet”>"> -->
+    <style>
+        /* styles.css */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-repeat: no-repeat; */
+            background-image: url(./images/black.jpg);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: red;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        form input,
+        form button {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        #productList {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .product-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: 300px;
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .product-item h2 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }a
+
+        .product-item p {
+            font-size: 1rem;
+            color: #666;
+            margin: 5px 0;
+        }
+
+        @media screen and (max-width: 600px) {
+            .product-item {
+                width: 100%;
+            }
+        }
+        #post{
+            box-shadow: 10px 5px 5px rgb(255, 0, 0);
+            margin-top: 40px;
+            padding-top: 10px;
+            padding-bottom: 18px;
+        }
+    
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg" style="background-color: blue;color: rgb(248, 248, 248);" id="navbarr">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="color: white;">MY PERSONAL BLOG</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <button style="background-color: blue;color: rgb(255, 255, 255);" id="logout">LOGOUT</button>
+                   </li>
+                   <li class="nav-item">
+<p style="position: relative;  left: 20px; top: 3px;" ><a href="./myprofile.html" style="color: blanchedalmond;">HELLO USER</a></p>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <div class="container" style="border: 3px solid rgb(232, 229, 255);" id="post">
+        <h1 style="color: white; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">DASHBOARD</h1>
+
+        <form id="ProductForm">
+            <!-- Add your input fields for productName, productDesc, and productPrice here -->
+            <input type="text" name="productName" placeholder="Place Holder" style="padding: 15px;padding-left: 10px;border-radius: 6px;">
+            <input type="text" name="productDesc" placeholder=" Say Some" style="padding: 100px;">
+
+            <button type="submit" style="background-color: rgb(25, 8, 14); color: white;" id="post" >PUBLISH POST</button>
+        </form>
+    </div>
+
+    <div class="container mt-5 mb-5" style="padding-left: 360px;" >
+        <div class="row" id="productParent"  >
+
+                        <!-- <div class="col-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                <div class="card-footer">
+                    <button class="btn btn-danger" onclick="deleteCard('${doc.id}')">Delete</button>
+                </div>
+                    
+                    </div>
+                </div>
+            </div>
+         -->
+
+        </div>
+
+ 
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script type="module" src="user.js"></script>
+
+</html>
